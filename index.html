@@ -394,11 +394,26 @@
               onclick="window['modal-dialog'].showModal()"
               aria-controls="modal-dialog"
       >
-        <svg class="icon-floppy" viewBox="0 0 28 28">
+        <svg class="icon-floppy" viewBox="0 0 39 39">
           <use href="./svg/floppy.svg#floppy"></use>
         </svg>
         <span class="button__text"> Сохранить на память </span>
       </button>
+      <dialog class="modal-dialog" id="modal-dialog">
+        <div class="modal-dialog__message">
+          <svg class="icon-floppy">
+            <use href="./svg/floppy.svg#floppy"></use>
+          </svg>
+          <p>Вставьте дискету, чтобы продолжить</p>
+        </div>
+        <button
+                class="modal-dialog-ok-button button"
+                type="button"
+                onclick="window['modal-dialog'].close()"
+        >
+          <span class="button__text">OK</span>
+        </button>
+      </dialog>
     </main>
     <script src="./scripts/like.js"></script>
   </body>

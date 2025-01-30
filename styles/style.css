@@ -29,10 +29,7 @@
 .header {
   min-inline-size: 320px;
   max-inline-size: 696px;
-}
-
-.header__section {
-  min-height: 325px;
+  padding: clamp(7.5rem, 7.324rem + 0.751dvi, 8rem);
   margin: 100px 0 0;
   background-color: #fff;
   display: flex;
@@ -40,25 +37,27 @@
   justify-content: center;
   align-items: center;
   border: 2px solid #000000;
+  gap: 20px;
 }
 
+
 .header__title {
-  font-family: 'PressStart2P-Regular', sans-serif;
+  font-family: 'PressStart2P', sans-serif;
   font-weight: 400;
-  font-size: 49px;
+  font-size: clamp(3.063rem, 2.71rem + 1.502dvi, 4.063rem);
   line-height: 49px;
   text-align: center;
   justify-self: center;
 }
 
 .header__subtitle {
-  font-family: 'PressStart2P-Regular', sans-serif;
+  font-family: 'PressStart2P', sans-serif;
   font-weight: 400;
-  font-size: 14px;
+  font-size: clamp(0.875rem, 0.677rem + 0.845dvi, 1.438rem);
   line-height: 14px;
   text-align: center;
   text-transform: uppercase;
-  margin-top: 20px;
+  white-space: nowrap;
 }
 
 .content {
@@ -93,6 +92,8 @@
 .content__image {
   width: 100%;
   filter: none;
+  object-fit: cover;
+  object-position: center;
 }
 
 .filter-contrast {
@@ -343,29 +344,6 @@ dialog .icon-floppy {
   background-color: transparent;
   padding: 8px;
   position: relative;
-}
-
-.button {
-  transition: box-shadow 0.3s linear;
-}
-
-.button:focus-visible {
-  outline: none;
-  box-shadow: 2px 2px 0 #000;
-}
-
-.button::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background-color: #000;
-  transform: scaleX(0);
-  transition: transform 0.5s ease-in-out;
-  transform-origin: left;
-}
-
-.button:hover::after {
-  transform: scaleX(1);
 }
 
 @media (width>=696px) {

@@ -2,4 +2,6 @@
 :root {
     --page-font: 'Inter';
     --special-font: 'PressStart2P';
+    --card-title-font-weight: 700;
+    --card-content-font-weight: 400;
 }

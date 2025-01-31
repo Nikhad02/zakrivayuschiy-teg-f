@@ -70,10 +70,9 @@
 .content__title {
   font-family: var(--page-font), sans-serif;
   font-size: 18px;
-  font-weight: 700;
-  line-height: 21px;
-  letter-spacing: 1px;
-  padding: 4px 10px 6px;
+  font-variation-settings: 'wght' var(--card-title-font-weight);
+  line-height: 22px;
+  padding: 4px 10px 4px;
 
 }
 
@@ -94,6 +93,8 @@
   filter: none;
   object-fit: cover;
   object-position: center;
+  border-bottom: 2px solid #000;
+  border-top: 2px solid #000;
 }
 
 .filter-contrast {
@@ -131,7 +132,7 @@
 .image-label {
   position: absolute;
   top: 25px;
-  right: 25px;
+  right: 11px;
   font-family: var(--special-font), sans-serif;
   font-size: 14px;
   font-weight: 400;
@@ -160,9 +161,9 @@
 .content__text {
   font-family: var(--page-font), sans-serif;
   font-size: 18px;
-  font-weight: 400;
+  font-variation-settings: 'wght' var(--card-content-font-weight);
   line-height: 21px;
-  margin: 25px 25px 0;
+  margin: 22px 25px 0;
 }
 .content__text:nth-child(even) {
   margin-top: 27px;
@@ -196,8 +197,8 @@
   display: flex;
   justify-content: end;
   align-items: center;
-  gap: 12px;
-  margin: 25px 25px;
+  gap: 6px;
+  margin: 23px 25px;
 }
 
 .save-button {
@@ -209,7 +210,7 @@
   align-items: center;
   gap: 8px;
   align-self: center;
-  margin: 52px 0 100px;
+  margin: 50px 0 100px;
   position: relative;
 }
 
@@ -289,6 +290,9 @@ dialog .icon-floppy {
   fill: red;
   transition: fill 0.3s linear 0.05s;
 }
+.like-icon {
+  margin-top: 2px;
+}
 
 .like-icon.is-liked .core {
   fill: red;
@@ -352,5 +356,24 @@ dialog .icon-floppy {
     display: flex;
     flex-direction: column;
     margin: auto;
+  }
+  .header {
+    padding: 136px;
+    gap: 30px;
+  }
+  .image-label {
+    top: 28px;
+    right: 22px;
+  }
+  .content__text {
+    margin: 26px 25px 0;
+  }
+  .save-button {
+    display: block;
+    padding: 13px 21px;
+  }
+  .icon-floppy {
+    width: 21px;
+    height: 21px;
   }
 }

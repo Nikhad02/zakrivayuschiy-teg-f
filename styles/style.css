@@ -14,14 +14,8 @@
   min-inline-size: 320px;
   min-block-size: 100dvb;
   font-family: var(--page-font), sans-serif;
-  background-image: repeating-linear-gradient(to right, #d3d3d3, #d3d3d3 2px,
-          transparent 2px,
-          transparent 4px), repeating-linear-gradient(
-          to top,
-          #d3d3d3,
-          #d3d3d3 2px,
-          transparent 2px,
-          transparent 4px),linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a);
+  background-image: repeating-linear-gradient(to right, #d3d3d3, #d3d3d3 2px, transparent 2px, transparent 4px), repeating-linear-gradient(to top, #d3d3d3, #d3d3d3 2px, transparent 2px, transparent 4px),
+  linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a);
   background-size: cover;
   background-attachment: fixed;
 }
@@ -40,9 +34,8 @@
   gap: 20px;
 }
 
-
 .header__title {
-  font-family: 'PressStart2P', sans-serif;
+  font-family: "PressStart2P", sans-serif;
   font-weight: 400;
   font-size: clamp(3.063rem, 2.71rem + 1.502dvi, 4.063rem);
   line-height: 49px;
@@ -51,7 +44,7 @@
 }
 
 .header__subtitle {
-  font-family: 'PressStart2P', sans-serif;
+  font-family: "PressStart2P", sans-serif;
   font-weight: 400;
   font-size: clamp(0.875rem, 0.677rem + 0.845dvi, 1.438rem);
   line-height: 14px;
@@ -69,10 +62,9 @@
 .content__title {
   font-family: var(--page-font), sans-serif;
   font-size: 18px;
-  font-variation-settings: 'wght' var(--card-title-font-weight);
+  font-variation-settings: "wght" var(--card-title-font-weight);
   line-height: 22px;
   padding: 4px 10px 4px;
-
 }
 
 .content__section {
@@ -137,20 +129,12 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 14px;
-  text-shadow:
-          -1px -1px 0 #fff,
-          1px -1px 0 #fff,
-          -1px 1px 0 #fff,
-          1px 1px 0 #fff;
+  text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
   mix-blend-mode: hard-light;
   opacity: 0.5;
 }
 
-@supports (
-  (text-stroke: 1px #fff) or
-    (-webkit-text-stroke: 1px #fff)
-) {
-
+@supports ((text-stroke: 1px #fff) or (-webkit-text-stroke: 1px #fff)) {
   .image-label {
     -webkit-text-stroke: 1px #fff;
     text-stroke: 1px #fff;
@@ -161,7 +145,7 @@
 .content__text {
   font-family: var(--page-font), sans-serif;
   font-size: 18px;
-  font-variation-settings: 'wght' var(--card-content-font-weight);
+  font-variation-settings: "wght" var(--card-content-font-weight);
   line-height: 21px;
   margin: 22px 25px 0;
 }
@@ -183,210 +167,210 @@
 }
 
 .button__text {
-font-family: var(--special-font), sans-serif;
-font-size: 14px;
-font-weight: 400;
-line-height: 12px;
-z-index: 1;
-position: relative;
-mix-blend-mode: difference;
-color: #fff;
+  font-family: var(--special-font), sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 12px;
+  z-index: 1;
+  position: relative;
+  mix-blend-mode: difference;
+  color: #fff;
 }
 
 .card__like-button {
-background-color: transparent;
-border: 2px solid #000;
-padding: 8px 35px;
-position: relative;
+  background-color: transparent;
+  border: 2px solid #000;
+  padding: 8px 35px;
+  position: relative;
 }
 
 .button__section {
-display: flex;
-justify-content: end;
-align-items: center;
-gap: 6px;
-margin: 24px 25px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 6px;
+  margin: 24px 25px;
 }
 
 .save-button {
-display: flex;
-flex-direction: column;
-padding: 15px 20px;
-background-color: #fff;
-border: 2px solid #000000;
-align-items: center;
-gap: 8px;
-align-self: center;
-margin: 50px 0 100px;
-position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 15px 20px;
+  background-color: #fff;
+  border: 2px solid #000000;
+  align-items: center;
+  gap: 8px;
+  align-self: center;
+  margin: 50px 0 100px;
+  position: relative;
 }
 
 .icon-floppy {
-z-index: 1;
-position: relative;
-width: 28px;
-height: 28px;
-color: #fff;
-mix-blend-mode: difference;
+  z-index: 1;
+  position: relative;
+  width: 28px;
+  height: 28px;
+  color: #fff;
+  mix-blend-mode: difference;
 }
 
 dialog .icon-floppy {
-width: 38px;
-height: 38px;
-flex-shrink: 0;
-align-self: center;
+  width: 38px;
+  height: 38px;
+  flex-shrink: 0;
+  align-self: center;
 }
 
 .button {
-transition: box-shadow 0.3s linear;
+  transition: box-shadow 0.3s linear;
   cursor: pointer;
 }
 
 .button:focus-visible {
-outline: none;
-box-shadow: 2px 2px 0 #000;
+  outline: none;
+  box-shadow: 2px 2px 0 #000;
 }
 
 .button::after {
-content: '';
-position: absolute;
-inset: 0;
-background-color: #000;
-transform: scaleX(0);
-transition: transform 0.5s ease-in-out;
-transform-origin: left;
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: #000;
+  transform: scaleX(0);
+  transition: transform 0.5s ease-in-out;
+  transform-origin: left;
 }
 
 .button:hover::after {
-transform: scaleX(1);
+  transform: scaleX(1);
 }
 
 .core {
-fill: transparent;
-transition: fill 0.3s linear 0.03s;
+  fill: transparent;
+  transition: fill 0.3s linear 0.03s;
 }
 
 .main-body {
-fill: transparent;
-transition: fill 0.3s linear;
+  fill: transparent;
+  transition: fill 0.3s linear;
 }
 
 .contour {
-transition: fill 0.1s linear;
+  transition: fill 0.1s linear;
 }
 
 .sparks {
-opacity: 0;
+  opacity: 0;
 }
 
 .heart:hover .core {
-fill: #000;
-transition: fill 0.3s linear;
+  fill: #000;
+  transition: fill 0.3s linear;
 }
 
 .heart:hover .main-body {
-fill: #000;
-transition: fill 0.3s linear 0.05s;
+  fill: #000;
+  transition: fill 0.3s linear 0.05s;
 }
 
 .heart:active .core {
-fill: red;
-transition: fill 0.3s linear;
+  fill: red;
+  transition: fill 0.3s linear;
 }
 
 .heart:active .main-body {
-fill: red;
-transition: fill 0.3s linear 0.05s;
+  fill: red;
+  transition: fill 0.3s linear 0.05s;
 }
 
 .like-icon.is-liked .core {
-fill: red;
-transition: fill 0.3s linear;
+  fill: red;
+  transition: fill 0.3s linear;
 }
 
 .like-icon.is-liked .main-body {
-fill: red;
-transition: fill 0.3s linear 0.05s;
+  fill: red;
+  transition: fill 0.3s linear 0.05s;
 }
 
 .like-icon.is-liked .contour {
-fill: red;
-transition: fill 0.3s linear 0.06s;
+  fill: red;
+  transition: fill 0.3s linear 0.06s;
 }
 
 .like-icon.is-liked .heart {
-animation: heart-scale 0.3s ease-in 0.1s;
-transform-origin: center;
+  animation: heart-scale 0.3s ease-in 0.1s;
+  transform-origin: center;
 }
 
 .like-icon.is-liked .sparks {
-fill: red;
-animation: sparks-visible 0.3s ease-in 0.3s;
+  fill: red;
+  animation: sparks-visible 0.3s ease-in 0.3s;
 }
 
 .like-icon:focus {
-border: none;
+  border: none;
 }
 
 .card__icon-button:focus-visible {
-outline: 2px solid #000;;
+  outline: 2px solid #000;
 }
 
 .modal-dialog[open] {
-display: flex;
-flex-direction: column;
-gap: 30px;
-max-inline-size: 341px;
-border: 2px solid #000;
-padding-inline: 30px;
-padding-block: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  max-inline-size: 341px;
+  border: 2px solid #000;
+  padding-inline: 30px;
+  padding-block: 28px;
 }
 
 .modal-dialog::backdrop {
-background-color: #000;
-opacity: 0.75;
+  background-color: #000;
+  opacity: 0.75;
 }
 
 .modal-dialog__message {
-display: flex;
-gap: 20px;
-font-family: var(--special-font), sans-serif;
-font-size: 14px;
-font-weight: 400;
-line-height: 21px;
-text-transform: uppercase;
+  display: flex;
+  gap: 20px;
+  font-family: var(--special-font), sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  text-transform: uppercase;
 }
 
 .modal-dialog-ok-button {
-background-color: transparent;
-padding: 8px;
-position: relative;
+  background-color: transparent;
+  padding: 8px;
+  position: relative;
 }
 
 @media (width>=696px) {
-.page {
-max-inline-size: 696px;
-display: flex;
-flex-direction: column;
-margin: auto;
-}
-.header {
-padding: 136px;
-gap: 30px;
-}
-.image-label {
-top: 28px;
-right: 22px;
-}
-.content__text {
-margin: 26px 25px 0;
-}
-.save-button {
-display: block;
-padding: 13px 21px;
-}
-.icon-floppy {
-width: 21px;
-height: 21px;
-}
+  .page {
+    max-inline-size: 696px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+  }
+  .header {
+    padding: 136px;
+    gap: 30px;
+  }
+  .image-label {
+    top: 28px;
+    right: 22px;
+  }
+  .content__text {
+    margin: 26px 25px 0;
+  }
+  .save-button {
+    display: block;
+    padding: 13px 21px;
+  }
+  .icon-floppy {
+    width: 21px;
+    height: 21px;
+  }
 }

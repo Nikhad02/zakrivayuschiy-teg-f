@@ -239,6 +239,7 @@ align-self: center;
 
 .button {
 transition: box-shadow 0.3s linear;
+  cursor: pointer;
 }
 
 .button:focus-visible {
